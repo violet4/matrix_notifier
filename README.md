@@ -8,6 +8,7 @@ This makes it easy to enable any program that is capable of sending a localhost 
 Uses Python, python-nio, and flask.
 
 Installation:
+* Ensure you meet the installation requirements for python matrix-nio, particularly the libolm dependency for your operating system / distribution: https://matrix-nio.readthedocs.io/en/latest/#installation
 * `poetry install --with=client`
 * `cp config.py.sample config.py`
 * Fill out the values in `config.py`
