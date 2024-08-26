@@ -16,7 +16,7 @@ Installation:
 
 Initial version can only send a single text-based message at a time to a single room. The only configuration options are:
 * Homeserver
-* username
+* username (we recommend making a dedicated account for your sender)
 * password
-* target room ID
-* device name
+* target room ID (the room will messages will be sent)
+* device name (e.g. `python_matrix_notifier` to correspond to this program)
