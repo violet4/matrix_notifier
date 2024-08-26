@@ -1,0 +1,5 @@
+
+from matrix_notifier.matrix_connection import MatrixNotifier
+
+notifier = MatrixNotifier("https://myhomeserver.com:8448", "@my_bot:myhomeserver.com",
+                          "password", 'python_matrix_notifier')

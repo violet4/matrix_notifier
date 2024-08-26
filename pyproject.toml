@@ -1,0 +1,28 @@
+[tool.poetry]
+name = "matrix-notifier"
+version = "0.1.0"
+description = ""
+authors = ["Violet Eldridge <github@violet-mica.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+matrix-nio = {extras = ["e2e"], version = "^0.25.0"}
+flask = "^3.0.3"
+
+
+[tool.poetry.group.dev]
+optional = true
+
+[tool.poetry.group.dev.dependencies]
+ipdb = "^0.13.13"
+
+[tool.poetry.group.client]
+optional = true
+
+[tool.poetry.group.client.dependencies]
+requests = "^2.32.3"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
