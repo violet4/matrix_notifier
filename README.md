@@ -1,7 +1,7 @@
 
 # Matrix Notifier
 
-Matrix Notifier presents a simple python program that opens a long-lived connection to a Matrix server instance and listens for HTTP requests on localhost to send messages on your behalf.
+Matrix Notifier presents a simple python program that opens a long-lived connection to a Matrix server instance and listens for HTTP requests on localhost to send messages on your behalf. (NOTE: `libolm` is officially deprecated by the Matrix group as shown on the repository https://gitlab.matrix.org/matrix-org/olm , in favor of vodozemac, which is not currently supported by python matrix-nio. If you need 100% privacy and security, wrap this with wireguard or otherwise don't use this.)
 
 This makes it easy to enable any program that is capable of sending a localhost HTTP request to send messages within Matrix.
 
