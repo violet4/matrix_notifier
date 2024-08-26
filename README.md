@@ -6,3 +6,17 @@ Matrix Notifier presents a simple python program that opens a long-lived connect
 This makes it easy to enable any program that is capable of sending a localhost HTTP request to send messages within Matrix.
 
 Uses Python, python-nio, and flask.
+
+Installation:
+* `poetry install --with=client`
+* `cp config.py.sample config.py`
+* Fill out the values in `config.py`
+* `./start.sh` in one terminal
+* From another terminal: `poetry run python send_message.py 'hello!'`
+
+Initial version can only send a single text-based message at a time to a single room. The only configuration options are:
+* Homeserver
+* username
+* password
+* target room ID
+* device name
